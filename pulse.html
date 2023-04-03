@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+
+     <style>
+        .pulse{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #83C7E5;
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 160px;
+}
+
+.pulse a{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 25px;
+    z-index: 1;
+}
+
+.pulse::before,
+.pulse::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(
+        #9FCFE9,
+        #3FCDC7
+    ); */
+    background: #9FCFE9;
+    position: absolute;
+    border-radius: 50%;
+     /* z-index: 1;  */
+}
+
+.pulse::before{
+    animation: puse 2s ease-in infinite;
+}
+
+.pulse::after{
+    animation: puse 2s ease-in-out infinite;
+}
+
+@keyframes puse{
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+ .videoplay img{
+    height: 30rem;
+    width: 40%;
+}  
+     </style>
+</head>
+<body>
+
+    <section>
+        <div class="section3">
+          <div class="divlorem">
+
+            <div class="loremhead">
+                <b>Lorem Ipsum Lorem Ipsum borim bounj sasa trgds rredsf est <br>
+                fedsrw notice.</b>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elier <br>
+                    non nihil provident, excepturi, minus facere deserunt error optio molestiae in!</p>
+            </div>
+
+           <div class="pdiv">
+
+             <div class="bp">
+                <b>Lorem Ipsum </b> 
+
+                <!-- <div>
+                <i class="bx bx-fingerprint"></i> </div>  -->
+
+               <p>
+                olor deleniti repellat,
+                 ea esse molestias voluptatem error. <br>
+                 inventore adipisci officia optio id distinctio, eaque nobis doloribus?</p>
+
+                 <div class="fox">
+                    <i class="bx bx-fingerprint"></i> </div>
+             </div>
+
+             <div class="bp">
+                <b>Lorem Ipsum</b> 
+
+               <!-- <div>
+                <i class="bx bx-gift"></i> </div> -->
+
+              <p>
+                Lorm, corporis earum recusandae ipsam consequuntur <br>
+                  voluptatem ipsa nobis sunt ipsum dolor perferendis!</p>
+
+                  <div class="fox">
+                    <i class="bx bx-gift"></i> </div>
+             </div>
+
+             <div class="bp">
+                <b>Lorem ipsum</b> 
+
+              <!-- <div>
+                <i class="bx bx-atom"></i> </div> -->
+                
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicitr <br>
+                 Alias placeat voluptatum corporis ipsum repellat? </p>
+
+                 <div class="fox">
+                    <i class="bx bx-atom"></i> </div>
+             </div>
+
+          </div> 
+        </div> 
+
+            <div class="videoplay">
+
+               <div class="pulse">
+
+                 <a  href="https://www.youtube.com/watch?v=jDDaplaOz7Q"> 
+                     <i class="fa fa-play"></i>
+                  </a>
+
+               </div> 
+
+                 <img  src="assets/img/about.jpg"> 
+            </div >
+
+     </div>
+    </section>
+
+    
+</body>
+</html>
