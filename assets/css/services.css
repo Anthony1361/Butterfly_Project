@@ -1,0 +1,186 @@
+
+.section6 {
+    /* border: 1px solid red; */
+    /* margin-left: 10rem; 
+       margin-right: 5rem;  */
+    /* margin-bottom: 8rem; */
+    background-color: #f4fbfe;
+    height: 135vh;
+    padding-top: 80px;
+  }
+  
+  .service {
+    /* padding-top: 50px; */
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .service b {
+    color: #0e3749;
+    font-size: xx-large;
+  }
+  
+  .service p {
+    margin-top: 1rem;
+  }
+  
+  /* .alllorem{
+      display: flex;
+      background-color: #ffffff;
+  } */
+  
+  /* .lorem1 {
+    margin-bottom: 8rem; 
+    display: flex;
+    margin-left: 10rem;
+    background: white;
+  } */
+  
+  .loremone {
+    /* margin-left: 7rem;
+      position: relative;
+       transition: 0.2s ease-in-out;
+      clip-path: margin-box;  */
+
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 15px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease;
+    width: 350px;
+  }
+  
+  .loremone:hover {
+    top: -10px;
+  }
+  
+  .loremone:hover b {
+    color: skyblue;
+  }
+  
+  .cashstack {
+    /* color: #FF689B;
+       position: absolute; 
+      margin-left: -150px;
+      font-size: 80px;
+      margin-top: 15px; */
+  
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    color: #ff689b;
+    font-size: 64px;
+    transition: 0.5s;
+  }
+  
+  .loremone b {
+    margin-left: 50px;
+    font-size: large;
+  }
+  
+  .loremone a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .loremone p {
+    margin-top: 1rem;
+    line-height: 30px;
+    margin-left: 50px;
+    font-weight: lighter;
+  }
+  
+
+  
+  .calender4 {
+    /* color: #E9BF06;
+      position: absolute;
+      margin-left: -150px;
+      font-size: 80px;
+      margin-top: 15px; */
+  
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    color: #e9bf06;
+    font-size: 64px;
+    transition: 0.5s;
+  }
+  
+  
+  
+  .chattext {
+    /* color: #3FCDC7;
+      position: absolute;
+      margin-left: -150px;
+      font-size: 80px;
+      margin-top: 15px; */
+  
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    color: #3fcdc7;
+    font-size: 64px;
+    transition: 0.5s;
+  }
+  
+ 
+  
+
+  .card {
+    /* color: #41CF2E;
+      position: absolute;
+      margin-left: -150px;
+      font-size: 80px;
+      margin-top: 15px; */
+  
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    color: #41cf2e;
+    font-size: 64px;
+    transition: 0.5s;
+  }
+  
+
+  
+  .globe {
+    /* color: #D6FF22;
+      position: absolute;
+      margin-left: -150px;
+      font-size: 80px;
+      margin-top: 15px; */
+  
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    color: #d6ff22;
+    font-size: 64px;
+    transition: 0.5s;
+  }
+  
+
+  
+ 
+  
+  .clock {
+    /* color: #4680FF;
+      position: absolute;
+      margin-left: -150px;
+      font-size: 80px;
+      margin-top: 15px; */
+  
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    color: #4680ff;
+    font-size: 64px;
+    transition: 0.5s;
+  }
+  
+
+  
+  /* .....Section 6 Ends Here */
