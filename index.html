@@ -44,94 +44,115 @@
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <header>
       <section>
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <a href="index.html" class="butterfly"
-            ><img src="assets/img/logo.png" class="img-fluid"
-          /></a>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+          <div class="container">
 
-          <nav class="navbar navbar-expand-lg">
-            <!-- <img src="../Assets/Imges/butterfly.png" > -->
-            <!-- <a href="index.html" class="butterfly"><img src="assets/img/logo.png" class="img-fluid"></a> -->
+            <a class="navbar-brand" href="index.html" class = "butterfly">
+              <img src="assets/img/logo.png" class="img-fluid">
+            </a>
 
             <button
-              class="navbar-toggler"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarScroll"
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbar-Scroll">
-              <ul class="navbar-nav navbar-nav-scroll">
-                <li class="nav-item">
-                  <a href="#Home" class="nav-link active">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#ABOUT" class="nav-link">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#SERVICES" class="nav-link">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#PORTFOLIO" class="nav-link">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#TEAM" class="nav-link">TEAM</a>
-                </li>
-                <li></li>
-                <li class="nav-item dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    >Drop Down
-                  </a>
+            <div
+              class="sidebar offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img src="assets/img/logo.png" class="img-fluid">
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white shadow-none"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
 
-                  <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item">Drop Down 1</a></li>
-                    <li class="dropend">
-                      <a
-                        href="#"
-                        class="dropdown-item dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        >Deep Drop Down</a
-                      >
+              <div class="offcanvas-body d-flex flex-column p-4">
+                <ul class="navbar-nav justify-content-end align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#Home"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#ABOUT" class="nav-link">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#SERVICES" class="nav-link">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#PORTFOLIO" class="nav-link">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#TEAM" class="nav-link">TEAM</a>
+                  </li>
+                  <li></li>
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      >Drop Down
+                    </a>
+  
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Drop Down 1</a></li>
+                      <li class="dropend">
+                        <a
+                          href="#"
+                          class="dropdown-item dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          >Deep Drop Down</a
+                        >
+  
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item">Deep Drop Down1</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-item">Deep Drop Down2</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-item">Deep Drop Down3</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-item">Deep Drop Down4</a>
+                          </li>
+                          <li>
+                            <a href="#" class="dropdown-item">Deep Drop Down5</a>
+                          </li>
+                        </ul>
+                      </li>
+  
+                      <li><a href="#" class="dropdown-item">Drop Down2</a></li>
+                      <li><a href="#" class="dropdown-item">Drop Down3</a></li>
+                      <li><a href="#" class="dropdown-item">Drop Down4</a></li>
+                    </ul>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a href="#CONTACT" class="nav-link">CONTACT</a>
+                  </li>
+                </ul>
 
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a href="#" class="dropdown-item">Deep Drop Down1</a>
-                        </li>
-                        <li>
-                          <a href="#" class="dropdown-item">Deep Drop Down2</a>
-                        </li>
-                        <li>
-                          <a href="#" class="dropdown-item">Deep Drop Down3</a>
-                        </li>
-                        <li>
-                          <a href="#" class="dropdown-item">Deep Drop Down4</a>
-                        </li>
-                        <li>
-                          <a href="#" class="dropdown-item">Deep Drop Down5</a>
-                        </li>
-                      </ul>
-                    </li>
+              </div>
 
-                    <li><a href="#" class="dropdown-item">Drop Down2</a></li>
-                    <li><a href="#" class="dropdown-item">Drop Down3</a></li>
-                    <li><a href="#" class="dropdown-item">Drop Down4</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a href="#CONTACT" class="nav-link">CONTACT</a>
-                </li>
-              </ul>
             </div>
-            <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
-          </nav>
-        </div>
+
+          </div>
+        </nav>
       </section>
     </header>
 
@@ -139,32 +160,27 @@
       <section id="Home">
         <div class="container main2">
           <div class="row section2">
-            <!-- <div>
-                <img src="../Assets/Imges/BD.png" style="float: right;" width="%">
-               </div> -->
-
             <div
               class="order-2 order-lg-1 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 get"
             >
-              <h1>CREATING WEBSITES THAT MAKE YOU STOP & STARE</h1>
+              <h1 class="title-reveal">CREATING WEBSITES THAT MAKE YOU STOP & STARE</h1>
 
-              <b>
+              <p class="title-reveal">
                 Accusantum quam, aliquam ultricies eget temper id, aliq eget
                 nibt et. Maecen aliiquam, risus at semper. proin iacu Rerum id
                 culpa deserunt nobis velit animi dolore placeat faci.
-              </b>
+              </p>
 
-              <p>
-                <button class="butt">
+              
+                <button class="title-reveal butt">
                   <a href="#ABOUT">GET STARTED</a>
                 </button>
-              </p>
+              
             </div>
 
             <div
-              class="order-1 order-lg-2 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+              class="title-reveal-bottom order-1 order-lg-2 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
             >
-              <!-- <img src="../Assets/Imges/BD.png"  > -->
               <img src="assets/img/hero-img.png" class="img-fluid" />
             </div>
           </div>
@@ -173,26 +189,26 @@
 
       <section id="ABOUT" class="container">
         <div class="row section3">
-
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 videoplay">
-            <div class="pulse">
+          <div
+            class="title-reveal-top col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 videoplay"
+          >
+            <div class="title-reveal pulse">
               <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q">
                 <i class="fa fa-play"></i>
               </a>
             </div>
-
-            <!-- <img src="assets/img/about.jpg" /> -->
           </div>
 
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 divlorem">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 divlorem"
+          >
             <div class="loremhead">
-              <h3
-                >Lorem Ipsum Lorem Ipsum borim bounj sasa trgds rredsf est
-                
-                fedsrw notice.</h3
-              >
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elier <br />
+              <h3 class="title-reveal-right">
+                Lorem Ipsum Lorem Ipsum borim bounj sasa trgds rredsf est fedsrw
+                notice.
+              </h3>
+              <p class="title-reveal-right">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elier 
                 non nihil provident, excepturi, minus facere deserunt error
                 optio molestiae in!
               </p>
@@ -200,95 +216,75 @@
 
             <div class="pdiv">
               <div class="bp">
-                <b>Lorem Ipsum </b>
+                <h6 class="title-reveal-right">Lorem Ipsum </h6>
 
-                <!-- <div>
-                <i class="bx bx-fingerprint"></i> </div>  -->
-
-                <p>
+                <p class="title-reveal-right">
                   olor deleniti repellat, ea esse molestias voluptatem error.
-                  <br />
                   inventore adipisci officia optio id distinctio, eaque nobis
                   doloribus?
                 </p>
 
-                <div class="fox">
+                <div class="title-reveal-right fox">
                   <i class="bx bx-fingerprint"></i>
                 </div>
               </div>
 
               <div class="bp">
-                <b>Lorem Ipsum</b>
+                <h6 class="title-reveal-right">Lorem Ipsum</h6>
 
-                <!-- <div>
-                <i class="bx bx-gift"></i> </div> -->
-
-                <p>
-                  Lorm, corporis earum recusandae ipsam consequuntur <br />
+                <p class="title-reveal-right">
+                  Lorm, corporis earum recusandae ipsam consequuntur 
                   voluptatem ipsa nobis sunt ipsum dolor perferendis!
                 </p>
 
-                <div class="fox">
+                <div class="title-reveal-right fox">
                   <i class="bx bx-gift"></i>
                 </div>
               </div>
 
               <div class="bp">
-                <b>Lorem ipsum</b>
+                <h6 class="title-reveal-right">Lorem ipsum</h6>
 
-                <!-- <div>
-                <i class="bx bx-atom"></i> </div> -->
-
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicitr <br />
+                <p class="title-reveal-right">
+                  Lorem ipsum dolor sit, amet consectetur adipisicitr 
                   Alias placeat voluptatum corporis ipsum repellat?
                 </p>
 
-                <div class="fox">
+                <div class="title-reveal-right fox">
                   <i class="bx bx-atom"></i>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 videoplay">
-            <div class="pulse">
-              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q">
-                <i class="fa fa-play"></i>
-              </a>
-            </div>
-
-            <img src="assets/img/about.jpg" />
-          </div> -->
         </div>
 
         <section class="section4">
           <div class="container">
             <div class="achieved">
-              <h3>WHAT WE HAVE ACHIEVED SO FAR</h3>
-              <p>
+              <h3 class="title-reveal">WHAT WE HAVE ACHIEVED SO FAR</h3>
+              <p class="title-reveal-right">
                 lusto et labore modi qui saplente xpedita tempora et aut
                 non-ipsum consequatur iilo
               </p>
             </div>
 
             <div class="row achieve">
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                 <span class="num" data-val="400">333</span> <br />
                 <p>Clients</p>
               </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="title-reveal-bottom col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                 <span class="num" data-val="340">444</span> <br />
                 <p>Projects</p>
               </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="title-reveal-bottom col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                 <span class="num" data-val="225">5555</span> <br />
                 <p>Hours Of Support</p>
               </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="title-reveal-right col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                 <span class="num" data-val="280">20</span> <br />
                 <p>Hard workers</p>
               </div>
@@ -298,49 +294,53 @@
 
         <section class="container">
           <div class="row firstfour">
-            
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-1.png"> -->
-                <img src="assets/img/clients/client-1.png" class="img-fluid" />
-              </div>
+            <div
+              class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-1.png" class="img-fluid" />
+            </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-2.png"> -->
-                <img src="assets/img/clients/client-2.png" class="img-fluid" />
-              </div>
+            <div
+              class="title-reveal-top col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-2.png" class="img-fluid" />
+            </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-3.png"> -->
-                <img src="assets/img/clients/client-3.png" class="img-fluid" />
-              </div>
+            <div
+              class="title-reveal-top col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-3.png" class="img-fluid" />
+            </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-4.png"> -->
-                <img src="assets/img/clients/client-4.png" class="img-fluid" />
-              </div>
-            
+            <div
+              class="title-reveal-right col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-4.png" class="img-fluid" />
+            </div>
 
-            
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-5.png"> -->
-                <img src="assets/img/clients/client-5.png" class="img-fluid" />
-              </div>
+            <div
+              class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-5.png" class="img-fluid" />
+            </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-6.png"> -->
-                <img src="assets/img/clients/client-6.png" class="img-fluid" />
-              </div>
+            <div
+              class="title-reveal-top col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-6.png" class="img-fluid" />
+            </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-7.png"> -->
-                <img src="assets/img/clients/client-7.png" class="img-fluid" />
-              </div>
+            <div
+              class="title-reveal-top col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-7.png" class="img-fluid" />
+            </div>
 
-              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo">
-                <!-- <img src="../Assets/Imges/client-8.png"> -->
-                <img src="assets/img/clients/client-8.png" class="img-fluid" />
-              </div>
-           </div>
+            <div
+              class="title-reveal-right col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 memo"
+            >
+              <img src="assets/img/clients/client-8.png" class="img-fluid" />
+            </div>
           </div>
         </section>
       </section>
@@ -348,21 +348,17 @@
       <section id="SERVICES" class="section6">
         <div class="container">
           <div class="service">
-            <b> SERVICES </b> <br />
+            <h4 class="title-reveal"> SERVICES </h4> <br />
 
-            <p>
+            <p class="title-reveal-right">
               Lorem r corrupti sed voluptates omnis reiciendis consequuntur
-              blanditiis perferendis <br />
+              blanditiis perferendis 
               distinctio laborum deleniti totam. Officia culpa autem in nam.
             </p>
           </div>
 
           <div class="lorem1">
-
-           <!-- <div class="roll">
-            <div class="lorem1"> -->
-
-            <div class="loremone">
+            <div class="title-reveal-top loremone">
               <a href="#"><b> Lorem ipsum </b></a> <br />
 
               <div class="cashstack">
@@ -370,14 +366,13 @@
               </div>
 
               <p>
-                sit amet consectetur latrum deletti 
-                kkkkkkm sequi corpor latrum deletti 
-                id mollitia sapiente latrum deletti 
-                odio facere latrum deletti.
+                sit amet consectetur latrum deletti kkkkkkm sequi corpor latrum
+                deletti id mollitia sapiente latrum deletti odio facere latrum
+                deletti.
               </p>
             </div>
 
-            <div class="loremone">
+            <div class="title-reveal-top loremone">
               <a href="#"><b> Lorem ipsum </b></a> <br />
 
               <div class="calender4">
@@ -385,14 +380,12 @@
               </div>
 
               <p>
-                amet consectetur latrum deletti 
-                quam sapiente, latrum heum deletti 
-                modi eum corrup kiss 
-                architecto corrupt kiss.
+                amet consectetur latrum deletti quam sapiente, latrum heum
+                deletti modi eum corrup kiss architecto corrupt kiss.
               </p>
             </div>
 
-            <div class="loremone">
+            <div class="title-reveal-top loremone">
               <a href="#"><b> Lorem ipsum</b></a> <br />
 
               <div class="chattext">
@@ -400,17 +393,12 @@
               </div>
 
               <p>
-                dolor sit amet co latrum deletti 
-                Sunt consequuntur offic latrum  
-                corporis ipsam. Volupt latrum 
-                udiandae deletti latrum .
+                dolor sit amet co latrum deletti Sunt consequuntur offic latrum
+                corporis ipsam. Volupt latrum udiandae deletti latrum .
               </p>
             </div>
-           <!-- </div>  -->
-          
-           <!-- <div class="lorem1">  -->
-                     
-            <div class="loremone">
+
+            <div class="title-reveal-bottom loremone">
               <a href="#"><b> Lorem ipsum </b></a> <br />
 
               <div class="card">
@@ -418,14 +406,13 @@
               </div>
 
               <p>
-                sit amet consectetur latrum deletti 
-                adipisicing elit. Harum, latrum 
-                adipisicing elit. Harum, latrum 
-                in asperna latrum deletti.
+                sit amet consectetur latrum deletti adipisicing elit. Harum,
+                latrum adipisicing elit. Harum, latrum in asperna latrum
+                deletti.
               </p>
             </div>
 
-            <div class="loremone">
+            <div class="title-reveal-bottom loremone">
               <a href="#"><b> Lorem ipsum </b></a> <br />
 
               <div class="globe">
@@ -433,14 +420,12 @@
               </div>
 
               <p>
-                sit amet consectetur latrum deletti .
-                illo maiores fuga, lattrum deletti 
-                adipisicing elit. Harum, latrum 
-                expedita mairoe fuga !
+                sit amet consectetur latrum deletti . illo maiores fuga, lattrum
+                deletti adipisicing elit. Harum, latrum expedita mairoe fuga !
               </p>
             </div>
 
-            <div class="loremone">
+            <div class="title-reveal-bottom loremone">
               <a href="#"><b> Lorem ipsum </b></a> <br />
 
               <div class="clock">
@@ -448,44 +433,30 @@
               </div>
 
               <p>
-                sit amet consectetur .
-                Porro unde impedit temporibu
-                voluptatum possimus similique 
-                adipisicing elit. Harum, latrum latrum
+                sit amet consectetur . Porro unde impedit temporibu voluptatum
+                possimus similique adipisicing elit. Harum, latrum latrum
               </p>
             </div>
-
-           <!-- </div> -->
-           <!-- </div>  -->
-
-         </div> 
+          </div>
         </div>
       </section>
 
       <section id="PORTFOLIO">
-        <div class="section7">
+        <div class="container section7">
           <div class="portfolio">
-            <b> PORTFOLIO </b>
+            <h4 class="title-reveal"> PORTFOLIO </h4>
           </div>
 
           <div class="portfoliolorem">
-            Lorem ipsum, dolor sit amet Perspiciatis laborum quas magni eius
-            atquead ratione consectetur adipisicing elit. aperiam culpa, optio
-            iure<br />
-            <p>
+            <p class="title-reveal-right">
+              Lorem ipsum, dolor sit amet Perspiciatis laborum quas magni eius
+              atquead ratione consectetur adipisicing elit. aperiam culpa, optio
               laborum quas magni eius atque. laborum quas magni eius
               atquelaborum quas magni eius atque
             </p>
           </div>
 
-          <div class="portfoliolink">
-            <!-- <ul>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Card</a></li>
-                    <li><a href="#apple">App</a></li>
-                    <li><a href="#">Web</a></li>
-                </ul> -->
-
+          <div class="title-reveal-bottom portfoliolink">
             <ul>
               <li class="list active" data-filter="all"><a>All</a></li>
               <li class="list" data-filter="card"><a>Card</a></li>
@@ -494,9 +465,15 @@
             </ul>
           </div>
 
-          <div class="portfolioimg1">
-            <div class="portfolio-1" data-items="app">
-              <img src="assets/img/portfolio/portfolio-1.jpg" />
+          <div class="row portfolioimg1">
+            <div
+              class="title-reveal-top col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="app"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-1.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
                 <div class="overlaytext">
@@ -520,21 +497,19 @@
                   </div>
                 </div>
               </div>
-              <!-- zoom and slider -->
-              <!-- <div class="img-view"></div>
-
-                  <div class="img-next">
-                      <div id="prev-btn"></div>
-                      <div id="next-btn"></div> 
-                  </div> -->
-              <!-- zoom and slider ends -->
             </div>
 
-            <div class="portfolio-1" data-items="app">
-              <img src="assets/img/portfolio/portfolio-2.jpg" />
+            <div
+              class="title-reveal-top col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="app"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-2.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
-                <div class="overlaytex">
+                <div class="overlaytext">
                   <b>App 3</b>
                   <p>App</p>
 
@@ -557,11 +532,17 @@
               </div>
             </div>
 
-            <div class="portfolio-1" data-items="app">
-              <img src="assets/img/portfolio/portfolio-3.jpg" />
+            <div
+              class="title-reveal-top col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="app"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-3.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
-                <div class="overlayte">
+                <div class="overlaytext">
                   <b>APP 2</b>
                   <p>APP</p>
 
@@ -584,21 +565,14 @@
               </div>
             </div>
 
-            <!-- <div class="overlay">
-
-                <div class="overlaytext">
-                    <b>APP 1</b>
-                     <p>App</p> 
-                     <i class="bx bx-plus"></i>
-                     <i class="bx bx-link"></i>
-                </div>
-
-             </div> -->
-          </div>
-
-          <div class="portfolioimg1">
-            <div class="portfolio-1" data-items="card">
-              <img src="assets/img/portfolio/portfolio-4.jpg" />
+            <div
+              class="title-reveal col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="card"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-4.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
                 <div class="overlaytext">
@@ -624,11 +598,17 @@
               </div>
             </div>
 
-            <div class="portfolio-1" data-items="card">
-              <img src="assets/img/portfolio/portfolio-5.jpg" />
+            <div
+              class="title-reveal col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="card"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-5.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
-                <div class="overlaytex">
+                <div class="overlaytext">
                   <b>Card 1</b>
                   <p>CARD</p>
 
@@ -651,11 +631,17 @@
               </div>
             </div>
 
-            <div class="portfolio-1" data-items="card">
-              <img src="assets/img/portfolio/portfolio-6.jpg" />
+            <div
+              class="title-reveal col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="card"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-6.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
-                <div class="overlayte">
+                <div class="overlaytext">
                   <b>card 3</b>
                   <p>CARD</p>
 
@@ -677,11 +663,15 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="portfolioimg1">
-            <div class="portfolio-1" data-items="web">
-              <img src="assets/img/portfolio/portfolio-7.jpg" />
+            <div
+              class="title-reveal-right col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="web"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-7.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
                 <div class="overlaytext">
@@ -707,11 +697,17 @@
               </div>
             </div>
 
-            <div class="portfolio-1" data-items="web">
-              <img src="assets/img/portfolio/portfolio-8.jpg" />
+            <div
+              class="title-reveal-right col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="web"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-8.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
-                <div class="overlaytex">
+                <div class="overlaytext">
                   <b>Web 3</b>
                   <p>WEB</p>
                   <div class="portfolio-icon">
@@ -733,11 +729,17 @@
               </div>
             </div>
 
-            <div class="portfolio-1" data-items="web">
-              <img src="assets/img/portfolio/portfolio-9.jpg" />
+            <div
+              class="title-reveal-right col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 portfolio-1"
+              data-items="web"
+            >
+              <img
+                src="assets/img/portfolio/portfolio-9.jpg"
+                class="img-fluid"
+              />
 
               <div class="overlay">
-                <div class="overlayte">
+                <div class="overlaytext">
                   <b>Web 3</b>
                   <p>WEB</p>
 
@@ -759,359 +761,291 @@
                 </div>
               </div>
             </div>
-
-            <!-- the modal/lightbox -->
-            <!-- <div id="myModal" class="modal">
-                   <span class="close cursor" onclick="closeModal()">&times</span>
-                </div> -->
-
-            <!-- Next and Prev buttons -->
-            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
           </div>
         </div>
 
         <section>
-          <div class="section8">
-            <!-- <ol class="carousel-indicators">
-            <li data-bs-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-bs-target="#myCarousel" data-slide-to="1"></li>
-            <li data-bs-target="#myCarousel" data-slide-to="2"></li>
-            <li data-bs-target="#myCarousel" data-slide-to="3"></li>
-            <li data-bs-target="#myCarousel" data-slide-to="4"></li>
-         </ol> -->
+          <div class="title-reveal-bottom section8">
+            <div class="coloroverimg">
+              <div class="myslides goodman">
+                <input type="radio" name="radio-btn" id="radio1" />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <input type="radio" name="radio-btn" id="radio3" />
+                <input type="radio" name="radio-btn" id="radio4" />
+                <input type="radio" name="radio-btn" id="radio5" />
 
-            <div class="myslides goodman">
-              <input type="radio" name="radio-btn" id="radio1" />
-              <input type="radio" name="radio-btn" id="radio2" />
-              <input type="radio" name="radio-btn" id="radio3" />
-              <input type="radio" name="radio-btn" id="radio4" />
-              <input type="radio" name="radio-btn" id="radio5" />
+                <div class="slided first saul">
+                  <img
+                    src="assets/img/testimonials/testimonials-1.jpg"
+                    class="img-fluid"
+                  />
 
-              <div class="slided first saul">
-                <img src="assets/img/testimonials/testimonials-1.jpg" />
-                <!-- <img src="assets/img/gallery/gallery-1.jpg" alt=""> -->
+                  <div class="dolor">
+                    <h3>Saul Goodman</h3>
+                    <br />
+                    <h4>Ceo & Founder</h4>
+                    <br />
 
-                <!-- <h3>  Saul Goodman </h3><br>
-                 <p> Ceo & Founder </p> -->
-
-                <div class="dolor">
-                  <h3>Saul Goodman</h3>
-                  <br />
-                  <p>Ceo & Founder</p>
-                  <br />
-
-                  <!-- <i class="bx-pull-left bx bxs-quote-alt-left bx-lg"></i> -->
-
-                  <i class="fa fa-quote-left fa-lg" id="se">
-                    Lorem ipsum dolor sit amet consecelit. Asperiores error
-                    laudantium accusamus enim aut doloremque perferendis et dolo
-                  </i>
-
-                  <!-- Lorem ipsum dolor sit amet consecelit. Asperiores error laudantium accusamus
-                     enim aut doloremque perferendis et dolo  -->
-                  <br />
-                  <span>
-                    res tenetur dolor! Suscipit est error vitae iste ullam
-                    ratione eius quibusdam voluptates?
-                    <i class="fa fa-quote-right fa-lg"></i>
-                  </span>
+                    <p>
+                      <i class="fa fa-quote-left fa-lg" id="se"></i>
+                      Lorem ipsum dolor sit amet consecelit. Asperiores error
+                      laudantium accusamus enim aut doloremque perferendis et
+                      dolo tenetur dolor! Suscipit est error vitae iste ullam
+                      ratione eius quibusdam voluptates?
+                      <i class="fa fa-quote-right fa-lg"></i>
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slided saul">
-                <img src="assets/img/testimonials/testimonials-2.jpg" />
-                <!-- <img src="assets/img/gallery/gallery-2.jpg" alt=""> -->
+                <div class="slided saul">
+                  <img
+                    src="assets/img/testimonials/testimonials-2.jpg"
+                    class="img-fluid"
+                  />
 
-                <!-- <h3>  Saul Goodman </h3><br>
-                <p> Ceo & Founder </p> -->
-
-                <div class="dolor">
-                  <h3>Sarah Wilsson</h3>
-                  <br />
-                  <p>Designer</p>
-
-                  <!-- <i class="bx-pull-left bx bxs-quote-alt-left bx-lg"></i> -->
-
-                  <i class="fa fa-quote-left fa-lg" id="se">
-                    Lorem ipsum dolor sit amet consecelit. Asperiores error
-                    laudantium accusamus enim aut doloremque perferendis et dolo
-                  </i>
-
-                  <!-- Lorem ipsum dolor sit amet consecelit. Asperiores error laudantium accusamus
-                 enim aut doloremque perferendis et dolo  -->
-                  <br />
-                  <span>
-                    res tenetur dolor! Suscipit est error vitae iste ullam
-                    ratione eius quibusdam voluptates?
-                    <i class="fa fa-quote-right fa-lg"></i>
-                  </span>
+                  <div class="dolor">
+                    <h3>Sarah Wilsson</h3>
+                    <br />
+                    <h4>Designer</h4>
+                    <p>
+                      <i class="fa fa-quote-left fa-lg" id="se"></i>
+                      Lorem ipsum dolor sit amet consecelit. Asperiores error
+                      laudantium accusamus enim aut doloremque perferendis et
+                      dolo tenetur dolor! Suscipit est error vitae iste ullam
+                      ratione eius quibusdam voluptates?
+                      <i class="fa fa-quote-right fa-lg"></i>
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slided saul">
-                <img src="assets/img/testimonials/testimonials-3.jpg" />
-                <!-- <img src="assets/img/gallery/gallery-3.jpg" alt="" > -->
+                <div class="slided saul">
+                  <img
+                    src="assets/img/testimonials/testimonials-3.jpg"
+                    class="img-fluid"
+                  />
 
-                <!-- <h3>  Saul Goodman </h3><br>
-                <p> Ceo & Founder </p> -->
-
-                <div class="dolor">
-                  <h3>Jena Karlis</h3>
-                  <br />
-                  <p>Store Owner</p>
-
-                  <!-- <i class="bx-pull-left bx bxs-quote-alt-left bx-lg"></i> -->
-
-                  <i class="fa fa-quote-left fa-lg" id="se">
-                    Lorem ipsum dolor sit amet consecelit. Asperiores error
-                    laudantium accusamus enim aut doloremque perferendis et dolo
-                  </i>
-
-                  <!-- Lorem ipsum dolor sit amet consecelit. Asperiores error laudantium accusamus
-                 enim aut doloremque perferendis et dolo  -->
-                  <br />
-                  <span>
-                    res tenetur dolor! Suscipit est error vitae iste ullam
-                    ratione eius quibusdam voluptates?
-                    <i class="fa fa-quote-right fa-lg"></i>
-                  </span>
+                  <div class="dolor">
+                    <h3>Jena Karlis</h3>
+                    <br />
+                    <h4>Store Owner</h4>
+                    <p>
+                      <i class="fa fa-quote-left fa-lg" id="se"></i>
+                      Lorem ipsum dolor sit amet consecelit. Asperiores error
+                      laudantium accusamus enim aut doloremque perferendis et
+                      dolo tenetur dolor! Suscipit est error vitae iste ullam
+                      ratione eius quibusdam voluptates?
+                      <i class="fa fa-quote-right fa-lg"></i>
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slided saul">
-                <img src="assets/img/testimonials/testimonials-4.jpg" />
-                <!-- <img src="assets/img/gallery/gallery-4.jpg" alt="" > -->
+                <div class="slided saul">
+                  <img
+                    src="assets/img/testimonials/testimonials-4.jpg"
+                    class="img-fluid"
+                  />
 
-                <!-- <h3>  Saul Goodman </h3><br>
-                <p> Ceo & Founder </p> -->
-
-                <div class="dolor">
-                  <h3>Matt Brandon</h3>
-                  <br />
-                  <p>Freelancer</p>
-
-                  <!-- <i class="bx-pull-left bx bxs-quote-alt-left bx-lg"></i> -->
-
-                  <!-- <i class="fa fa-quote-left fa-lg"></i>
-                   Lorem ipsum dolor sit amet consecelit. Asperiores error laudantium accusamus
-                   enim aut doloremque perferendis et dolo <br>
-                  <p> res tenetur dolor! Suscipit est error vitae iste ullam ratione eius quibusdam voluptates?
-                    <i class="fa fa-quote-right fa-lg"></i>
-                  </p> -->
-
-                  <i class="fa fa-quote-left fa-lg" id="se">
-                    Lorem ipsum dolor sit amet consecelit. Asperiores error
-                    laudantium accusamus enim aut doloremque perferendis et dolo
-                  </i>
-
-                  <!-- Lorem ipsum dolor sit amet consecelit. Asperiores error laudantium accusamus
-                   enim aut doloremque perferendis et dolo  -->
-                  <br />
-                  <span>
-                    res tenetur dolor! Suscipit est error vitae iste ullam
-                    ratione eius quibusdam voluptates?
-                    <i class="fa fa-quote-right fa-lg"></i>
-                  </span>
+                  <div class="dolor">
+                    <h3>Matt Brandon</h3>
+                    <br />
+                    <h4>Freelancer</h4>
+                    <p>
+                      <i class="fa fa-quote-left fa-lg" id="se"></i>
+                      Lorem ipsum dolor sit amet consecelit. Asperiores error
+                      laudantium accusamus enim aut doloremque perferendis et
+                      dolo tenetur dolor! Suscipit est error vitae iste ullam
+                      ratione eius quibusdam voluptates?
+                      <i class="fa fa-quote-right fa-lg"></i>
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slided saul">
-                <img src="assets/img/testimonials/testimonials-5.jpg" />
-                <!-- <img src="assets/img/gallery/gallery-5.jpg" alt=""> -->
+                <div class="slided saul">
+                  <img
+                    src="assets/img/testimonials/testimonials-5.jpg"
+                    class="img-fluid"
+                  />
 
-                <!-- <h3>  Saul Goodman </h3><br>
-                <p> Ceo & Founder </p> -->
-
-                <div class="dolor">
-                  <h3>John Larson</h3>
-                  <br />
-                  <p>Entrepreneur</p>
-
-                  <!-- <i class="bx-pull-left bx bxs-quote-alt-left bx-lg"></i> -->
-
-                  <!-- <i class="fa fa-quote-left fa-lg"></i>
-                   Lorem ipsum dolor sit amet consecelit. Asperiores error laudantium accusamus
-                   enim aut doloremque perferendis et dolo <br>
-                  <p> res tenetur dolor! Suscipit est error vitae iste ullam ratione eius quibusdam voluptates?
-                    <i class="fa fa-quote-right fa-lg"></i>
-                  </p> -->
-
-                  <i class="fa fa-quote-left fa-lg" id="se">
-                    Lorem ipsum dolor sit amet consecelit. Asperiores error
-                    laudantium accusamus enim aut doloremque perferendis et dolo
-                  </i>
-
-                  <!-- Lorem ipsum dolor sit amet consecelit. Asperiores error laudantium accusamus
-                   enim aut doloremque perferendis et dolo  -->
-                  <br />
-                  <span>
-                    res tenetur dolor! Suscipit est error vitae iste ullam
-                    ratione eius quibusdam voluptates?
-                    <i class="fa fa-quote-right fa-lg"></i>
-                  </span>
+                  <div class="dolor">
+                    <h3>John Larson</h3>
+                    <br />
+                    <h4>Entrepreneur</h4>
+                    <p>
+                      <i class="fa fa-quote-left fa-lg" id="se"></i>
+                      Lorem ipsum dolor sit amet consecelit. Asperiores error
+                      laudantium accusamus enim aut doloremque perferendis et
+                      dolo tenetur dolor! Suscipit est error vitae iste ullam
+                      ratione eius quibusdam voluptates?
+                      <i class="fa fa-quote-right fa-lg"></i>
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-                <div class="auto-btn5"></div>
-              </div>
+                <div class="navigation-auto">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
+                  <div class="auto-btn5"></div>
+                </div>
 
-              <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-                <label for="radio5" class="manual-btn"></label>
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                  <label for="radio5" class="manual-btn"></label>
+                </div>
               </div>
             </div>
-
-            <!-- <a href="#myCarousel" data-slide="prev" class="left carousel-control">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-         </a>
-
-         <a href="#myCarousel" data-slide="next" class="right carousel-control">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-         </a> -->
-
-            <!-- <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-         <a href="#" class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-            <!-- <div style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-         </div> -->
           </div>
         </section>
       </section>
 
       <section id="TEAM">
         <div class="section9">
-          <div class="subsection9">
+          <div class="container subsection9">
             <div class="teams">
-              <b>TEAM</b> <br />
-              <p>
+              <h2 class="title-reveal">TEAM</h2>
+              <br />
+              <p class="title-reveal-right">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
                 inventore mi Eaque earum natus beatae ducimus accusantium
-                reiciendi
-              </p>
-              <div class="hfj">
-                rerum optio? vsgxxbvvgghhhhhhh , usgxbhhsjshhghg
+                reiciendi rerum optio? vsgxxbvvgghhhhhhh , usgxbhhsjshhghg
                 uhdgbvb,jhhhhnnm hfjhfhhf, jncjjdiockjn hyudsn
-              </div>
+              </p>
             </div>
 
-            <div class="fleximg">
-              <div class="bximg1">
-                <div class="imgall">
-                  <img src="assets/img/team/team-1.jpg" />
-                </div>
+            <div class="row g-3 fleximg">
+              <div
+                class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"
+              >
+                <div class="card bximg1">
+                  <div class="imgall">
+                    <img
+                      src="assets/img/team/team-1.jpg"
+                      class="card-img-top img-fluid"
+                    />
+                  </div>
 
-                <ul class="socialicon">
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
+                  <div class="card-body intro">
+                    <ul class="socialicon">
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
 
-                <div class="intro">
-                  <b>Walter White</b>
-                  <p>Chief Executive Officer</p>
-                </div>
-              </div>
-
-              <div class="bximg2">
-                <div>
-                  <img src="assets/img/team/team-2.jpg" />
-                </div>
-
-                <ul class="socialicon">
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-
-                <div class="intro">
-                  <b>Sarah Jhonson</b>
-                  <p>Product Manager</p>
+                    <h4 class="card-title">Walter White</h4>
+                    <span class="card-text">Chief Executive Officer</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="bximg3">
-                <div>
-                  <img src="assets/img/team/team-3.jpg" />
-                </div>
+              <div
+                class="title-reveal-top col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"
+              >
+                <div class="card bximg1">
+                  <div>
+                    <img
+                      src="assets/img/team/team-2.jpg"
+                      class="card-img-top img-fluid"
+                    />
+                  </div>
 
-                <ul class="socialicon">
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
+                  <div class="card-body intro">
+                    <ul class="socialicon">
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
 
-                <div class="intro">
-                  <b>William Anderson</b>
-                  <p>CTO</p>
+                    <h4 class="card-title">Sarah Jhonson</h4>
+                    <span class="card-text">Product Manager</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="bximg4">
-                <div>
-                  <img src="assets/img/team/team-4.jpg" />
+              <div
+                class="title-reveal-top col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"
+              >
+                <div class="card bximg1">
+                  <div>
+                    <img
+                      src="assets/img/team/team-3.jpg"
+                      class="card-img-top img-fluid"
+                    />
+                  </div>
+
+                  <div class="card-body intro">
+                    <ul class="socialicon">
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+
+                    <h4 class="card-title">William Anderson</h4>
+                    <span class="card-text">CTO</span>
+                  </div>
                 </div>
+              </div>
 
-                <ul class="socialicon">
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
+              <div
+                class="title-reveal-right col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"
+              >
+                <div class="card bximg1">
+                  <div>
+                    <img
+                      src="assets/img/team/team-4.jpg"
+                      class="card-img-top img-fluid"
+                    />
+                  </div>
 
-                <div class="intro">
-                  <b>Amanda Jepson</b>
-                  <p>Accountant</p>
+                  <div class="card-body intro">
+                    <ul class="socialicon">
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+
+                    <h4 class="card-title">Amanda Jepson</h4>
+                    <span class="card-text">Accountant</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1120,68 +1054,78 @@
       </section>
 
       <section>
-        <div class="section10">
+        <div class="container section10">
           <div class="gallery">
-            <b>GALLERY</b> <br />
-            <p>
+            <h2 class="title-reveal">GALLERY</h2>
+            <p class="title-reveal-right">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
               autem impedit explicabo error quis magni repellat architecto qui
-              veniam ullam?
+              veniam ullam? cidunt assumenda similique natus eos odit nam.
             </p>
-            <span> cidunt assumenda similique natus eos odit nam. </span>
           </div>
 
-          <div class="first4gallery">
-            <div class="gallery1">
-              <img src="assets/img/gallery/gallery-1.jpg" />
+          <div class="row first4gallery">
+            <div
+              class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" />
             </div>
 
-            <div class="gallery2">
-              <img src="assets/img/gallery/gallery-2.jpg" />
+            <div
+              class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" />
             </div>
 
-            <div class="gallery3">
-              <img src="assets/img/gallery/gallery-3.jpg" />
+            <div
+              class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" />
             </div>
 
-            <div class="gallery4">
-              <img src="assets/img/gallery/gallery-4.jpg" />
-            </div>
-          </div>
-
-          <div class="second4gallery">
-            <div class="gallery1">
-              <img src="assets/img/gallery/gallery-5.jpg" />
+            <div
+              class="title-reveal col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" />
             </div>
 
-            <div class="gallery2">
-              <img src="assets/img/gallery/gallery-6.jpg" />
+            <div
+              class="title-reveal-right col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" />
             </div>
 
-            <div class="gallery3">
-              <img src="assets/img/gallery/gallery-7.jpg" />
+            <div
+              class="title-reveal-right col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" />
             </div>
 
-            <div class="gallery4">
-              <img src="assets/img/gallery/gallery-8.jpg" />
+            <div
+              class="title-reveal-right col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" />
+            </div>
+
+            <div
+              class="title-reveal-bottom col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 gallery1"
+            >
+              <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" />
             </div>
           </div>
         </div>
       </section>
 
       <section id="CONTACT">
-        <div class="subsection10">
+        <div class="container subsection10">
           <div class="contact">
-            <b>CONTACT</b> <br />
-            <p>
+            <h2 class="title-reveal">CONTACT</h2> 
+            <p class="title-reveal-right">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Asperiores dolorem qui assumenda, quod inventore tempore
-              perspiciatis doloremque.
+              perspiciatis doloremque. Consectetur laboriosam voluptatibus in
+              inventore ea ratione hic, ipsum expedita dolores eligendi!
             </p>
-            <span>
-              Consectetur laboriosam voluptatibus in inventore ea ratione hic,
-              ipsum expedita dolores eligendi!
-            </span>
           </div>
 
           <div>
@@ -1193,192 +1137,199 @@
             ></iframe>
           </div>
 
-          <div class="location">
-            <div class="forhover">
-              <div class="psycho"><i class="bi bi-geo-alt"></i></div>
-              <b>Location:</b> <br />
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
+          <div class="row mt-5">
+            <div class="title-reveal col-lg-4">
+              <div class="location">
+                <div class="locations">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
 
-            <div>
-              <input
-                type="text"
-                class="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
+                <div class="mails">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
 
-            <div>
-              <input
-                type="text"
-                class="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="locationmail">
-            <div class="forhover">
-              <div class="psycho2">
-                <i class="bi bi-envelope"></i>
+                <div class="calls">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>
               </div>
-              <b>Email:</b> <br />
-              <p>info@example.com</p>
             </div>
 
-            <div class="Subjecttext">
-              <input
-                type="text"
-                class="textsubject"
-                placeholder="Subject"
-                required=""
-              />
-            </div>
-          </div>
+            <div class="title-reveal-right col-lg-8 mt-5 mt-lg-0">
+              <form class="myForm">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
 
-          <div class="locationcall">
-            <div class="forhover">
-              <div class="psycho3"><i class="bi bi-phone"></i></div>
-              <b>Call:</b> <br />
-              <p>+1 5589 55488 55s</p>
-            </div>
+                  <div class="col-md-6 mt-3 mt-md-0 form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
 
-            <div>
-              <textarea
-                name=""
-                id="Message"
-                placeholder="Message"
-                cols="30"
-                rows="10"
-                required
-              ></textarea>
-            </div>
-          </div>
+                <div class="form-group mt-3 Subjecttext">
+                  <input
+                    type="text"
+                    class="form-control textsubject"
+                    placeholder="Subject"
+                    required=""
+                  />
+                </div>
 
-          <div class="sub">
-            <input type="submit" class="submission" value="Send Message" />
+                <div class="mt-3 form-group">
+                  <textarea
+                    name=""
+                    class="form-control Message"
+                    placeholder="Message"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="sub">
+                  <input
+                    type="submit"
+                    class="submission"
+                    value="Send Message"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer id="footer-section">
       <div class="section11">
-        <div class="newsletter">
-          <b>Join Our Newsletter</b>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque</p>
-        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 newsletter">
+              <h2 class="title-reveal">Join Our Newsletter</h2>
+              <p class="title-reveal-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              </p>
 
-        <div class="newstext">
-          <input type="text" class="textown" />
-          <!-- </div> -->
+              <form class="title-reveal-bottom newstext">
+                <input type="email" name="email" class="textown" />
 
-          <!-- <div> -->
-          <a href="#">
-            <input type="submit" value="subscribe" class="submitown" />
-          </a>
+                <a href="#">
+                  <input type="submit" value="subscribe" class="submitown" />
+                </a>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 
       <section>
         <div class="section12">
-          <div class="Butterfly">
-            <b> Butterfly </b>
-            <p>
-              A108 Adam Street <br />
-              New York, NY 535022 <br />
-              United States
-            </p>
+          <div class="container">
+            <div class="row">
+              <div class="title-reveal col-lg-3 col-md-6 Butterfly">
+                <h4>Butterfly</h4>
+                <p>
+                  A108 Adam Street <br />
+                  New York, NY 535022 <br />
+                  United States <br />
+                  <b>Phone:</b> <span>+1 5589 55488 55 </span> <br />
+                  <b> Email: </b> <span> info@example.com </span>
+                </p>
+              </div>
 
-            <p>
-              <b>Phone:</b> <span>+1 5589 55488 55 </span> <br />
-              <b> Email: </b> <span> info@example.com </span>
-            </p>
-          </div>
+              <div class="title-reveal-top col-lg-3 col-md-6 usefullinks">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li>
+                    <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Terms of service</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                </ul>
+              </div>
 
-          <div class="usefullinks">
-            <b>Useful Links</b>
-            <ul>
-              <li>
-                <a href="#"> <span> > </span> Home </a>
-              </li>
-              <br />
-              <li>
-                <a href="#"> <span> > </span> About Us</a>
-              </li>
-              <br />
-              <li>
-                <a href="#"> <span> > </span>Services</a>
-              </li>
-              <br />
-              <li>
-                <a href="#"><span> > </span> Terms of Services</a>
-              </li>
-              <br />
-              <li>
-                <a href="#"><span> > </span> Privacy Policy</a>
-              </li>
-              <br />
-            </ul>
-          </div>
+              <div class="title-reveal-bottom col-lg-3 col-md-6 usefullinks">
+                <h4>Our Services</h4>
+                <ul>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Web Design</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Web Development</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Product Management</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Marketing</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Graphic Design</a>
+                  </li>
+                </ul>
+              </div>
 
-          <div class="usefullink">
-            <b>Our Services</b>
-            <ul>
-              <li>
-                <a href="#"> <span> > </span>Web Design</a>
-              </li>
-              <br />
-              <li>
-                <a href="#"> <span> > </span>Web Development</a>
-              </li>
-              <br />
-              <li>
-                <a href="#"> <span> > </span>Product Management</a>
-              </li>
-              <br />
-              <li>
-                <a href="#"> <span> > </span>Marketing</a>
-              </li>
-              <br />
-              <li>
-                <a href="#"> <span> > </span>Graphics Design</a>
-              </li>
-              <br />
-            </ul>
-          </div>
+              <div class="title-reveal-right col-lg-3 col-md-6 usefullink">
+                <h4>Our Social Networks</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-          <div class="oursocial">
-            <b>Our Social Networks</b>
-            <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit.
-            </p>
-
-            <ul class="networks">
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="bx bxl-skype"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
-            </ul>
+                <ul class="networks">
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bxl-skype"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section11">
+      <section class="title-reveal-bottom container py-4 section11">
         <div class="copyright">
           &copy; Copyright <strong><span>Butterfly</span></strong
           >. All Rights Reserved
@@ -1389,7 +1340,14 @@
       </section>
     </footer>
 
+    <a href="#" class="back-to-top"><span><i class="bi bi-arrow-up-short"></i></span></a>
+
     <script src="Js/bootstrap.min.css"></script>
+
+    <!-- For scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ........................................ -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

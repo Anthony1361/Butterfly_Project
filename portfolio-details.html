@@ -17,52 +17,119 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <section >
-            <div >
-                <nav>
-                    <div class="butter">
-                        <!-- <img src="../Assets/Imges/butterfly.png" > -->
-                        <img src="assets/img/logo.png" >
-                    </div>
-                
-                 <div class="menubar">   
-                  <ul>
-                    <li> <a href="#Home" class="navigation active">HOME</a> </li>
-                    <li> <a href="#ABOUT" class="navigation">ABOUT</a> </li>
-                    <li> <a href="#SERVICES" class="navigation">SERVICES</a> </li>
-                    <li> <a href="#PORTFOLIO" class="navigation">PORTFOLIO</a >  </li>
-                    <li> <a href="#TEAM" class="navigation">TEAM</a > </li> <li> 
-                    <li> <a href="#">DROP DOWN  </a >
-                        
-                        <ul>
-                            <li><a href="#">Drop Down1</a></li>
-                            <li><a href="#">Deep Drop Down</a>
-                            
-                               <ul>
-                                  <li><a href="#">Deep Drop Down1</a></li>
-                                  <li><a href="#">Deep Drop Down2</a></li>
-                                  <li><a href="#">Deep Drop Down3</a></li>
-                                  <li><a href="#">Deep Drop Down4</a></li>
-                                  <li><a href="#">Deep Drop Down5</a></li>
-                               </ul>
-                            </li>
+  <header>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
 
-                            <li><a href="#">Drop Down2</a></li>
-                            <li><a href="#">Drop Down3</a></li>
-                            <li><a href="#">Drop Down4</a></li>
-                        </ul>
+          <a class="navbar-brand" href="index.html" class = "butterfly">
+            <img src="assets/img/logo.png" class="img-fluid">
+          </a>
+
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="assets/img/logo.png" class="img-fluid">
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body d-flex flex-column p-4">
+              <ul class="navbar-nav justify-content-end align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link " href="#Home"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#ABOUT" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#SERVICES" class="nav-link">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#PORTFOLIO" class="nav-link active">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#TEAM" class="nav-link">TEAM</a>
+                </li>
+                <li></li>
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    >Drop Down
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Drop Down 1</a></li>
+                    <li class="dropend">
+                      <a
+                        href="#"
+                        class="dropdown-item dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        >Deep Drop Down</a
+                      >
+
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#" class="dropdown-item">Deep Drop Down1</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Deep Drop Down2</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Deep Drop Down3</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Deep Drop Down4</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Deep Drop Down5</a>
+                        </li>
+                      </ul>
                     </li>
 
-                    <li> <a href="#CONTACT">CONTACT</a > </li>
+                    <li><a href="#" class="dropdown-item">Drop Down2</a></li>
+                    <li><a href="#" class="dropdown-item">Drop Down3</a></li>
+                    <li><a href="#" class="dropdown-item">Drop Down4</a></li>
                   </ul>
-                 </div>
-                
-                
-                </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#CONTACT" class="nav-link">CONTACT</a>
+                </li>
+              </ul>
+
             </div>
-        </section>
-    </header>
+
+          </div>
+
+        </div>
+      </nav>
+    </section>
+  </header>
 
     
 
@@ -90,39 +157,42 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div >
-              <div class="myslided align-items-center">
+            <div>
+              <div class="myslided">
+                
                 <input type="radio" name="radio-bt" id="radi1">
                 <input type="radio" name="radio-bt" id="radi2">
-                <input type="radio" name="radio-bt" id="radi3">
+                <input type="radio" name="radio-bt" id="radi3"> 
 
                 <div class="move second">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-1.jpg"  class="img-fluid" alt="">
                 </div>
 
                 <div class="move">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-2.jpg"  class="img-fluid"  alt="">
                 </div>
 
                 <div class="move">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-3.jpg"  class="img-fluid"  alt="">
                 </div>
 
               </div>
-              <div class="navigation-aut">
+
+
+              <!-- <div class="navigation-aut">
                 <div class="auto-bt1"></div>
                 <div class="auto-bt2"></div>
                 <div class="auto-bt3"></div>
                 
-           </div>
+             </div>
 
-           <div class="navigation-man">
-                <label for="radio1" class="manual-bt"></label>
-                <label for="radio2" class="manual-bt"></label>
-                <label for="radio3" class="manual-bt"></label>
+             <div class="navigation-man">
+                <label for="radi1" class="manual-bt"></label>
+                <label for="radi2" class="manual-bt"></label>
+                <label for="radi3" class="manual-bt"></label>
                 
+             </div> -->
            </div>
-            </div>
           </div>
 
           <div class="col-lg-4">
@@ -150,94 +220,134 @@
 
   </main>
 
-  <footer>
+  <footer id="footer-section">
     <div class="section11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 newsletter">
+            <b>Join Our Newsletter</b>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            </p>
 
-        <div class="newsletter">
-            <b>Join Our Newsletter</b> 
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque </p>
+            <form class="newstext">
+              <input type="email" name="email" class="textown" />
+
+              <a href="#">
+                <input type="submit" value="subscribe" class="submitown" />
+              </a>
+            </form>
+          </div>
         </div>
-
-        <div class="newstext">
-            <input type="text" class="textown" >
-        <!-- </div> -->
-
-        <!-- <div> -->
-           <a href="#"> <input type="submit" value="subscribe" class="submitown"> </a>
-        </div>
+      </div>
     </div>
-    
-
 
     <section>
-     <div class="section12">
+      <div class="section12">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 Butterfly">
+              <h4>Butterfly</h4>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022 <br />
+                United States <br />
+                <b>Phone:</b> <span>+1 5589 55488 55 </span> <br />
+                <b> Email: </b> <span> info@example.com </span>
+              </p>
+            </div>
 
-        <div class="Butterfly">
-           <b> Butterfly </b>
-          <p>
-            A108 Adam Street <br>
-            New York, NY 535022 <br>
-            United States
-          </p> 
+            <div class="col-lg-3 col-md-6 usefullinks">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
 
-           <p>
-               <b>Phone:</b>  <span>+1 5589 55488 55 </span> <br>
-              <b> Email:  </b> <span> info@example.com </span>
-           </p>  
-            
+            <div class="col-lg-3 col-md-6 usefullinks">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 usefullink">
+              <h4>Our Social Networks</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+              <ul class="networks">
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-skype"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="usefullinks">
-           <b>Useful Links</b>
-         <ul>
-          <li> <a href="#"> <span> > </span> Home </a> </li>  <br>
-          <li> <a href="#"> <span> > </span> About Us</a> </li> <br>
-          <li> <a href="#"> <span> > </span>Services</a></li> <br>
-          <li> <a href="#"><span> > </span> Terms of Services</a></li>  <br>
-          <li> <a href="#"><span> > </span> Privacy Policy</a> </li> <br>
-         </ul>  
-        </div>
-        
-        <div class="usefullink">
-            <b>Our Services</b> 
-         <ul>
-           <li> <a href="#"> <span> > </span>Web Design</a> </li> <br>
-           <li> <a href="#"> <span> > </span>Web Development</a> </li> <br>
-           <li> <a href="#"> <span> > </span>Product Management</a> </li> <br>
-           <li> <a href="#"> <span> > </span>Marketing</a> </li> <br>
-           <li> <a href="#"> <span> > </span>Graphics Design</a> </li>  <br>
-         </ul>   
-        </div>
+    <section class="container py-4 section11">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Butterfly</span></strong
+        >. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </section>
+  </footer>
 
-        <div class="oursocial">                       
-            <b>Our Social Networks</b> 
-          <p>  Lorem ipsum dolor sit amet  <br> consectetur adipisicing elit. </p>
+  <a href="#" class="back-to-top"><span><i class="bi bi-arrow-up-short"></i></span></a>
 
-          <ul class="networks">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook" ></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" ></i></a></li>
-           <li> <a href="#"><i class="bx bxl-skype"></i></a> </li>
-            <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
-        </ul>
-        </div>
-        
-    </div>
-   </section>
-
-   <section class="section11">
-     <div class="copyright">
-    &copy; Copyright <strong><span>Butterfly</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-   </section>
-
-  </footer> 
 
  
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   
   <script src="Js/bootstrap.min.css"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>

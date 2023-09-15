@@ -1,3 +1,22 @@
+// For scroll reveal
+
+//Common reveal options to create reveal animations
+ScrollReveal({ 
+    // The reset: true causes the animation to always come and goes instead of animating once
+    reset: true,
+    distance: "60px",
+    duration: 2500,
+    delay: 400
+});
+
+//Target elements, and specify options to create reveal animations
+ScrollReveal().reveal('.title-reveal', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.title-reveal-right', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.title-reveal-top', { delay: 600, origin: 'top' });
+ScrollReveal().reveal('.title-reveal-bottom', { delay: 600, origin: 'bottom' });
+// ScrollReveal().reveal('.media-icons i', '.items li', { delay: 500, origin: 'bottom', interval: 200 });
+
+// .....................................................//
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 5000;
 
@@ -23,37 +42,31 @@ const glightbox = GLightbox({
   });
 
   //portfolio details below//
-  let move = 1;
-  setInterval(function(){
-      document.getElementById("radi" + move).checked = true;
-      move++;
-      if(move > 3){
-          move = 1;
-      }
-  },5000);
-  
 
-//open the modal//
-// function openModal() {
-//     document.getElementById("myModal").style.display = "block";
+// let firstIndex = 0;
+// function automaticSlide(){
+//     setTimeout(automaticSlide, 2000);
+//     let pics;
+//     const img = document.querySelectorAll("img");
+//     for(pics=0; pics<img.length; pics++){
+//         img[pics].style.display="none";
+//     }
+//     firstIndex++;
+//     if(firstIndex > img.length){
+//         firstIndex = 1;
+//     }
+//     img[firstIndex - 1].style.display="block";
 // }
+// automaticSlide();
 
-//close the modal//
-// function closeModal() {
-//     document.getElementById("myModal").style.display = "none";
-// }
-
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-//next/prev controls//
-// function plusSlides(n) {
-//     showSlides(slideIndex += n);
-// }
-
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
+//   let move = 1;
+//   setInterval(function(){
+//       document.getElementById("radi" + move).checked = true;
+//       move++;
+//       if(move > 3){
+//           move = 1;
+//       }
+//   },5000);
 
 
 ///.....................................//
@@ -94,57 +107,3 @@ setInterval(function(){
         counter = 1;
     }
 },5000);
-
-
-
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//     showSlides(slideIndex += n);
-// }
-
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//     let i;
-//     let slides = document.getElementsByClassName("myslides");
-//     let dots = document.getElementsByClassName("dot");
-//     if(n > slides.length){
-//         slideIndex = 1
-//     }
-//     if(n < 1){
-//         slideIndex = slides.length
-//     }
-//     for(i = 0; i < slides.length; i++){
-//         slides[i].style.display = "none";
-//     }
-//     for(i = 0; i < dots.length; i++){
-//         dots[i].className.replace("active", "");
-//     }
-//     slides[slideIndex - 1].style.display = "block";
-//     dots[slideIndex - 1].className += "active";
-// }
-
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//     let i;
-//     let  slides = document.getElementsByClassName("myslides");
-    
-//     for(i = 0; i < slides.length; i++){
-//         slides[i].style.display = "none";
-//     }
-
-//     slideIndex++;
-//     if(slideIndex > slides.length){
-//         slideIndex = 1
-//     }
-
-//     slides[slideIndex - 1].style.display = "block";
-
-//     setTimeout(showSlides, 2000);
-// }
